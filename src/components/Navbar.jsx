@@ -14,10 +14,10 @@ const Navbar = ({theme, setThem}) => {
            <img onClick={()=> setSidebarOpen(false)}
            src={assets.close_icon} alt="" className='w-5 absolute ring-4 top-4 sm:hidden' />
 
-           <a href="#" className='sm:hover:border-b'>Home</a>
-           <a href="#services" className='sm:hover:border-b'>Services</a>
-           <a href="#our-work" className='sm:hover:border-b'>Our Work</a>
-           <a href="#contact-us" className='sm:hover:border-b'>Contact Us</a>
+           <a onClick={()=> setSidebarOpen(false)} href="#" className='sm:hover:border-b'>Home</a>
+           <a onClick={()=> setSidebarOpen(false)} href="#services" className='sm:hover:border-b'>Services</a>
+           <a onClick={()=> setSidebarOpen(false)} href="#our-work" className='sm:hover:border-b'>Our Work</a>
+           <a onClick={()=> setSidebarOpen(false)} href="#contact-us" className='sm:hover:border-b'>Contact Us</a>
         </div>
          
          <div className='flex items-center gap-2 sm:gap-4'>

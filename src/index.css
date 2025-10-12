@@ -2,7 +2,8 @@
 
 @import "tailwindcss";
 
-@custom-variant dark(&:where(.dark, .dark *))
+/* Removed unsupported @custom-variant at-rule */
+/* @custom-variant dark (&:where(.dark, .dark *))  */
 
 *{
   font-family: "Manrope", sans-serif;
@@ -10,7 +11,7 @@
 }
 
 @theme {
-  --color-primary: 5044E5;
+  --color-primary: #5044E5;
 
 
 }

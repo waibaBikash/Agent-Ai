@@ -1,7 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import assets from '../assets/assets'
 
 const ThemeToggleBtn = ({theme, setTheme}) => {
+
+   useEffect (()=>{
+     const prefersDardMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+     setTheme(theme || (prefersDardMode ? 'dark' : 'light'))
+   },[])
+
+
+    useEffect(()=>{
+      if(theme === 'dark'){
+        document.documentElement.classList.add('dark')
+      }else{
+        document.documentElement.classList.remove('dark')
+      }
+      localStorage.setItem('theme', theme)
+    },[theme])
+
   return (
     <>
        <button>

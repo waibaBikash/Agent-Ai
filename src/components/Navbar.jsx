@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import assets from '../assets/assets'
-import ThemeToggleBtn from './ThemeToggleBtn'
+import { useState } from 'react';
+import assets from '../assets/assets';
+import ThemeToggleBtn from './ThemeToggleBtn';
 
 const Navbar = ({theme, setTheme}) => {
 
@@ -41,4 +41,4 @@ const Navbar = ({theme, setTheme}) => {
   )
 }
 
-export default Navbar
+export default Navbar;
